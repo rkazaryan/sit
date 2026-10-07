@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Исследование функции</title>
+    <!-- Подключение MathJax -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <h1 align="center">Исследование функции одной переменной</h1>
+    <h2>Порядок исследования функции</h2>
+    <ol>
+        <li><a href=#m1>Область определения и область значения</a></li>
+        <li><a href=#m2>Четность и периодичность</a></li>
+        <li><a href=#m3>Точки пересечения с осями</a></li>
+        <li><a href=#m4>Асимптоты</a></li>
+        <li><a href=#m5>Экстремумы</a></li>
+        <li><a href=#m6>Перегибы</a></li>
+        <li><a href=#m7>График</a></li>
+    </ol>
+    <p>Квадратный корень из x: \( \sqrt{x} \)</p>
+    \(\sqrt{y+2}\)
+    \[\sqrt{y+2}\]
+    <p>\(\frac{sin(x)}{x}\)</p>
+    <p>Корень с подкоренным выражением: \( \sqrt{a^2 + b^2} \)</p>
+    
+    <p>Кубический <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%B5%D0%BD%D1%8C">корень</a> из дроби (в отдельной строке):</p>
+    \[ \sqrt[3]{\frac{a}{b}} \]
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <h2>Пример 1</h2>
+    <p>Рассмотрим функцию \(f(x)= x^3 - 3x \)</p>
+    <ol>
+        <li><b><a name=m1>Область определения и область значения</a></b></li>
+        <p>\(D(f)=(-\infty;+\infty)\)<br>\(E(f)=(-\infty; +\infty)\)</p>
+
+        <li><b><a name=m2>Четность и периодичность</a></b></li>
+        <p>\(f(-x) = (-x)^3 - 3(-x) = -x^3 + 3x = - (x^3 - 3x) = -f(x)\) - нечетная</p>
+        <li><b><a name=m3>Точки пересечения с осями</a></b></li>
+        <p>\(f(0) = 0^3 -3\cdot0 = 0\)</p>
+        <p>
+            \(f(x) = 0\): \(x^3 - 3x = 0\)<br>
+            &emsp;  &emsp;&emsp; \(x(x^2-3)=0\)<br>
+            &emsp;&emsp;\(x=0\);&emsp;\(x^2-3=0\)<br>
+            &emsp;&emsp;&emsp;&emsp;\((x-\sqrt{3})(x+\sqrt{3})=0\)<br>
+            &emsp;&emsp;&emsp;&emsp;\(x=\sqrt{3}\);&emsp;\(x=-\sqrt{3}\)<br>
+            \((-\sqrt{3};0),&emsp;(0;0),&emsp;(\sqrt{3};0)\)
+        </p>
+
+        <li><b><a name="m4">Асимптоты</a></b></li>
+        <p>
+            Так как \(D(f) = (-\infty;+\infty)\), то вертикальных асимптот нет.<br><br>
+            Наклонные и горизонтальные асимптоты (\(y = kx + b\)):<br><br>
+            &emsp;\( k = \lim\limits_{x \to \pm\infty} \dfrac{f(x)}{x} = \lim\limits_{x \to \pm\infty} \dfrac{x^3 - 3x}{x} = \lim\limits_{x \to \pm\infty} (x^2 - 3) = +\infty \)<br><br>
+            Так как предел равен бесконечности, наклонных и горизонтальных асимптот нет.<br><br>
+            Асимптот нет.
+        </p>
+        <li><b><a name=m5>Экстремумы</a></b></li>
+        <p>
+            Найдем производную функции:<br>
+            &emsp;\( f'(x) = (x^3 - 3x)' = 3x^2 - 3 \)<br><br>
+
+            Найдем критические точки (\(f'(x)=0)\):<br>
+            &emsp;\(3x^2 - 3 = 0 \implies 3(x^2 - 1) = 0 \)<br>
+            &emsp;\( 3(x - 1)(x + 1) = 0 \)<br>
+            &emsp; &emsp;\(
+            \left[
+            \begin{array}{l}
+            x = -1 \\
+            x = 1
+            \end{array}
+            \right.\)
+            <p>Определим знаки производной на интервалах:<br>
+            <img src="https://raw.githubusercontent.com/rkazaryan/sit/refs/heads/main/df.jpg" width="400">
+            </p>
+            \(x = -1\) - точка максимума;<br>
+            \(x = 1\) - точка минимума;<br><br>
+            \(f(-1) = (-1)^3 - 3(-1) = -1 + 3 = 2\)<br>
+            \(f(1) = 1^3 - 3\cdot1 = 1 - 3 = -2\)<br><br>
+
+            Экстремумы: \((-1; 2)\), \((1; -2)\)
+        </p>
+        <li><b><a name=m6>Перегибы</a></b></li>
+        <p></p>
+        <li><b><a name=m7>График</a></b></li>
+    </ol>
+</body>
+</html>
